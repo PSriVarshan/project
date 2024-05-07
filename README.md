@@ -123,6 +123,7 @@ detect_handwriting(image_path)
 ### III)Perform object detection with label in an image
 
 ```python
+
 config_file='ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
 frozen_model='frozen_inference_graph.pb'
 
@@ -135,7 +136,7 @@ with open(file_name,'rt')as fpt:
 
 print(classLabels)
 print(len(classLabels))
-img=cv2.imread('bike.jpg')
+img=cv2.imread('Proj.jpeg')
 plt.imshow(img)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 model.setInputSize(320,320)
@@ -150,9 +151,12 @@ for ClassInd,conf,boxes in zip(ClassIndex.flatten(),confidence.flatten(),bbox):
     cv2.rectangle(img,boxes,(0,0,255),2)
     cv2.putText(img,classLabels[ClassInd-1],(boxes[0]+10,boxes[1]+40),font,fontScale=font_scale,color=(255,0,0),thickness=1)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
+
 ```
 
 #### OUTPUT:
+
+![image](https://github.com/PSriVarshan/project/assets/114944059/9c6010db-d607-4840-b230-c92ef400917d)
 
 
 
