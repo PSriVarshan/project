@@ -55,13 +55,13 @@ Register No: 212222240104
 import cv2
 import numpy as np
 
-image = cv2.imread('sample.jpg')
+image = cv2.imread('SriVarshan.jpg')
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 cv2.imshow('Original Image', image_rgb)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 roi_mask = np.zeros_like(image_rgb)
-roi_mask[100:300, 200:400, :] = 255  
+roi_mask[10:400, 100:250, :] = 255  
 segmented_roi = cv2.bitwise_and(image_rgb, roi_mask)
 cv2.imshow('Segmented ROI', segmented_roi)
 cv2.waitKey(0)
@@ -69,6 +69,13 @@ cv2.destroyAllWindows()
 ```
 #### OUTPUT:
 
+##### Original Image
+
+![image](https://github.com/PSriVarshan/project/assets/114944059/4cc3e000-31de-42bf-b03e-39052f9c653a)
+
+##### Segmented ROI
+
+![image](https://github.com/PSriVarshan/project/assets/114944059/beedd898-223d-4d87-bd06-23ab5a9f9779)
 
 
 
@@ -98,10 +105,16 @@ def detect_handwriting(image_path):
     plt.axis('off')
     plt.show()
     
-image_path = 'handwritten.jpg'
+image_path = 'Image1.jpg'
 detect_handwriting(image_path)
 ```
 #### OUTPUT:
+
+
+
+
+![image](https://github.com/PSriVarshan/project/assets/114944059/361e5040-8c94-4916-b3a3-e02df94c9d0a)
+
 
 
 
