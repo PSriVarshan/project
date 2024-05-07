@@ -71,11 +71,13 @@ cv2.destroyAllWindows()
 
 ##### Original Image
 
-![image](https://github.com/PSriVarshan/project/assets/114944059/4cc3e000-31de-42bf-b03e-39052f9c653a)
+![image](https://github.com/PSriVarshan/project/assets/114944059/beedd898-223d-4d87-bd06-23ab5a9f9779)
+
+
 
 ##### Segmented ROI
 
-![image](https://github.com/PSriVarshan/project/assets/114944059/beedd898-223d-4d87-bd06-23ab5a9f9779)
+![image](https://github.com/PSriVarshan/project/assets/114944059/4cc3e000-31de-42bf-b03e-39052f9c653a)
 
 
 
